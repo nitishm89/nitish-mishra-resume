@@ -195,23 +195,6 @@ function App() {
             }}
             media={
               <div className="relative mx-auto max-w-[520px]">
-                <motion.div
-                  animate={{ y: [0, 12, 0] }}
-                  transition={{
-                    duration: 7,
-                    repeat: Number.POSITIVE_INFINITY,
-                    delay: 0.3,
-                  }}
-                  className="absolute -right-6 bottom-16 z-20 rounded-2xl border border-slate-900/10 bg-slate-950 px-5 py-4 text-white shadow-glow"
-                >
-                  <p className="text-xs uppercase tracking-[0.2em] text-white/60">
-                    Working Across
-                  </p>
-                  <p className="mt-1 text-sm font-semibold">
-                    Azure, AWS, Alibaba Cloud
-                  </p>
-                </motion.div>
-
                 <div className="surface-card relative z-10 overflow-hidden p-4 sm:p-5">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(15,23,42,0.04),transparent_52%)]" />
                   <div className="relative rounded-[24px] border border-white/80 bg-gradient-to-br from-slate-100 via-white to-amber-50 p-3 shadow-inner">
