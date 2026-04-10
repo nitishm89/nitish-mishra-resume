@@ -198,7 +198,7 @@ function App() {
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY }}
-                  className="absolute -left-6 top-10 rounded-2xl border border-white/80 bg-white/85 px-4 py-3 shadow-lg backdrop-blur"
+                  className="absolute -left-8 top-12 z-20 rounded-2xl border border-white/80 bg-white/90 px-4 py-3 shadow-lg backdrop-blur"
                 >
                   <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
                     Focus
@@ -215,7 +215,7 @@ function App() {
                     repeat: Number.POSITIVE_INFINITY,
                     delay: 0.3,
                   }}
-                  className="absolute -right-4 bottom-12 rounded-2xl border border-slate-900/10 bg-slate-950 px-5 py-4 text-white shadow-glow"
+                  className="absolute -right-6 bottom-16 z-20 rounded-2xl border border-slate-900/10 bg-slate-950 px-5 py-4 text-white shadow-glow"
                 >
                   <p className="text-xs uppercase tracking-[0.2em] text-white/60">
                     Working Across
@@ -225,7 +225,7 @@ function App() {
                   </p>
                 </motion.div>
 
-                <div className="surface-card relative overflow-hidden p-4 sm:p-5">
+                <div className="surface-card relative z-10 overflow-hidden p-4 sm:p-5">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(15,23,42,0.04),transparent_52%)]" />
                   <div className="relative rounded-[24px] border border-white/80 bg-gradient-to-br from-slate-100 via-white to-amber-50 p-3 shadow-inner">
                     <img
