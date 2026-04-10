@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 222 39% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 39% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 39% 12%;
+    --primary: 220 55% 16%;
+    --primary-foreground: 38 75% 96%;
+    --secondary: 35 50% 92%;
+    --secondary-foreground: 222 39% 12%;
+    --muted: 36 42% 93%;
+    --muted-foreground: 215 17% 42%;
+    --accent: 169 44% 90%;
+    --accent-foreground: 174 71% 16%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 30% 86%;
+    --input: 210 30% 86%;
+    --ring: 220 55% 16%;
+    --radius: 1rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(217, 119, 6, 0.12), transparent 26%),
+      radial-gradient(circle at top right, rgba(15, 118, 110, 0.11), transparent 24%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 241, 234, 0.96));
+    min-height: 100vh;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  ::selection {
+    background: rgba(217, 119, 6, 0.18);
+    color: rgb(15, 23, 42);
+  }
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-[28px] border border-white/80 bg-white/75 shadow-panel backdrop-blur-xl;
+  }
+
+  .section-grid {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl leading-tight text-slate-900 sm:text-4xl lg:text-5xl;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-amber-200/80 bg-amber-50/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-amber-900;
+  }
+}
