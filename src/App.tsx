@@ -196,19 +196,6 @@ function App() {
             media={
               <div className="relative mx-auto max-w-[520px]">
                 <motion.div
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY }}
-                  className="absolute -left-8 top-12 z-20 rounded-2xl border border-white/80 bg-white/90 px-4 py-3 shadow-lg backdrop-blur"
-                >
-                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
-                    Focus
-                  </p>
-                  <p className="mt-1 text-sm font-semibold text-slate-900">
-                    Platform Engineering + FinOps
-                  </p>
-                </motion.div>
-
-                <motion.div
                   animate={{ y: [0, 12, 0] }}
                   transition={{
                     duration: 7,
